@@ -4,4 +4,4 @@ Utilizes Twelve Data and Notion API, querying a Notion database table for user a
 
 Script will run periodically, updating the metrics for existing stocks in the database and adding any newly added stock symbols. This is done by checking the stocks status on the table, which is either, "Add Stock", "Continously Update", or "Stop Tracking".
 
-Current displayed data includes: Stock Symbol, Company Name, Price, Low Price, High Price, Volume, and Change in Stock Price.
+Current displayed data includes: Stock Symbol, Company Name, Price, Low Price, High Price, 52 Week Low, 52 Week High, Volume, and Change in Stock Price.

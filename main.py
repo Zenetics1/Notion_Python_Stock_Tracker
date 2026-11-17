@@ -44,6 +44,7 @@ for page in DB_Query['results']:
 
         selected_vol = selected_stock['volume']
         selected_change = selected_stock['change']
+        fifty_two = selected_stock['fifty_two_week']
 
         Notion_Page_Endpoint = f"https://api.notion.com/v1/pages/{page_id}"
 
@@ -97,6 +98,12 @@ for page in DB_Query['results']:
                 },
                 "Change":{
                     "number": float(selected_change)
+                },
+                "52W LOW": {
+                    "number": float(fifty_two['low'])
+                },
+                "52W High": {
+                    "number": float(fifty_two['high'])
                 },
                 "Status": {
                     "status": {
