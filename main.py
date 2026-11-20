@@ -164,6 +164,12 @@ for page in DB_Query['results']:
                 },
                 "Change":{
                     "number": float(selected_change)
+                },
+                "52W LOW": {
+                    "number": float(fifty_two['low'])
+                },
+                "52W High": {
+                    "number": float(fifty_two['high'])
                 }
             }
         }
